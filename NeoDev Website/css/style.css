@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Niramit, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222325;
+}
+
+::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1B81E4;
+}
+
+::selection {
+  background-color: #222325;
+  color: dodgerblue;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #222325;
+  padding: 35px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar img {
+  height: 15%;
+  width: 175px;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  padding: 12px;
+  text-decoration: none;
+  cursor: default;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+  cursor: default;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+.head {
+  background-image: url(../images/background.png);
+  height: 600px;
+  width: 100%;
+  margin-top: 50px;
+  background-position: bottom;
+}
+
+.head h1 {
+  color: dodgerblue;
+  text-align: center;
+  padding-top: 175px;
+  font-size: 40px;
+}
+
+.head p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.services h1 {
+  text-align: center;
+  color: dodgerblue;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.table {
+  padding-top: 30px;
+  border: 0;
+  width: 90%;
+  padding-left: 10%;
+  height: 150px;
+}
+
+.table tr {
+  color: black;
+  height: 40px;
+}
+
+.table tr td {
+  color: black;
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+
+.thead {
+  font-size: 30px;
+}
+
+.tbody {
+  font-size: 17px;
+}
+
+.footer {
+  color: dodgerblue;
+  background-color: #222325;
+  margin-top: 375px;
+  text-align: center;
+  height: 30px;
+  clear: both;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+/* About Page */
+
+.ahead {
+  color: #1f1f20;
+  margin-top: 175px;
+  text-align: center;
+  font-size: 25px;
+  float: left;
+  width: 60%;
+  padding-bottom: 30px;
+}
+
+.ahead h1 {
+  color: dodgerblue !important;
+}
+
+.ahead p {
+  margin-left: 150px;
+  margin-right: 150px;
+  font-size: 20px !important;
+}
+
+.team {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 200px;
+  padding-top: 30px;
+  height: auto;
+  width: 35%;
+  float: right;
+  border-radius: 5px;
+}
+
+.team h1 {
+  text-align: center;
+  font-size: 50px;
+  color: dodgerblue;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.team p {
+  width: 50%;
+  text-align: center;
+  margin-left: 24%;
+  font-size: 15px !important;
+}
+
+.afooter {
+  color: dodgerblue;
+  background-color: #222325;
+  margin-top: 50px;
+  text-align: center;
+  height: 30px;
+  clear: both;
+}
+
+/* Contact Page */
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+  font-family: Niramit;
+}
+
+textarea {
+  font-family: Niramit;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid dodgerblue;
+    cursor: text;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #222325;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: dodgerblue;
+    color: black;
+    transition: 0.3s;
+}
+
+.ccontainer {
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 175px;
+  margin-left: 100px;
+  float: left;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+ clear: both;
+}
+
+.directcontact {
+  margin-top: 175px;
+  margin-right: 100px;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.cfooter {
+  color: dodgerblue;
+  background-color: #222325;
+  margin-top: 50px;
+  text-align: center;
+  height: 30px;
+  clear: both;
+}
+
+/* Packages Page */
+
+.pcontainer {
+  margin-top: 175px;
+}
+
+.pcontainer h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+  height: 700px;
+  text-align: center;
+  float: left;
+  padding: 10px 10px 30px 10px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  font-family: Niramit;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #222325;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background-color: dodgerblue;
+  color: black;
+  transition: 0.3s;
+}
+
+.pfooter {
+  color: dodgerblue;
+  background-color: #222325;
+  margin-top: 375px;
+  text-align: center;
+  height: 30px;
+  clear: both;
+}
+
+.pfooter p {
+  font-size: 18px;
+}
